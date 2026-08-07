@@ -1,0 +1,25 @@
+.Dropdown {
+  position: relative;
+
+  .Dropdown_Popup {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    min-width: 160px;
+  }
+}
+
+.Dropdown_Popup {
+  display: none;
+  padding: 10px;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: black;
+  border: 1px solid #ccc;
+
+  &._open {
+    display: block;
+  }
+}
