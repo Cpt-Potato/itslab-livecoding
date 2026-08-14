@@ -15,7 +15,7 @@ export const Dropdown = ({
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <div className={`Dropdown ${className ?? ""}`} {...htmlAttrs}>
+    <menu className={`Dropdown ${className ?? ""}`} {...htmlAttrs}>
       <button
         className="Dropdown_Trigger"
         onClick={() => setIsDropdownOpen((isDropdownOpen) => !isDropdownOpen)}
@@ -30,6 +30,6 @@ export const Dropdown = ({
           </li>
         ))}
       </ul>
-    </div>
+    </menu>
   );
 };
